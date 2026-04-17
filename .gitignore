@@ -1,0 +1,18 @@
+# Ignore input/output files
+input/*
+output/*
+!input/.gitkeep
+!output/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

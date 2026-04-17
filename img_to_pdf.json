@@ -1,0 +1,31 @@
+{
+  "name": "img_to_pdf",
+  "description": "将指定目录下的图片合并为 PDF",
+  "entry_point": "img_to_pdf:run",
+  "parameters": {
+    "input_dir": {
+      "type": "string",
+      "description": "输入图片文件夹路径，包含 jpg/png 图片",
+      "default": "./inputs",
+      "required": false
+    },
+    "output_filename": {
+      "type": "string",
+      "description": "输出 PDF 文件名",
+      "default": "output.pdf",
+      "required": false
+    }
+  },
+  "examples": [
+    {
+      "description": "使用默认参数转换当前目录下 inputs 文件夹的图片",
+      "invocation": "使用 img_to_pdf 处理这些图片"
+    },
+    {
+      "description": "指定输入目录和输出文件名",
+      "invocation": "使用 img_to_pdf 工具将 ./photos 目录的图片合并为 album.pdf"
+    }
+  ],
+  "dependencies": ["img2pdf"],
+  "auto_install": true
+}
